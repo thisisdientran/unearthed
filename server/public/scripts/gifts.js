@@ -18,7 +18,7 @@ const renderGifts = async () => {
             bottomContainer.appendChild(name)
     
             const pricePoint = document.createElement('p')
-            pricePoint.textContent = `Price: ${gift.price}`
+            pricePoint.textContent = `Price: ${gift.pricePoint}`
             bottomContainer.appendChild(pricePoint)
     
             const audience = document.createElement('p')
@@ -43,7 +43,7 @@ const renderGifts = async () => {
     }
 }
 
-const requestedURL = window.location.href.split('/').pop()
+const requestedUrl = window.location.href.split('/').pop()
 
 if (requestedUrl) {
     window.location.href = '../404.html'

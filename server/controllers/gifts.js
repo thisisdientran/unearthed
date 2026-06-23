@@ -10,5 +10,5 @@ const getGifts = async (req,res) => {
 }
 
 export default {
-    getGifts
-};
+  getGifts
+}
